@@ -1,9 +1,4 @@
-terraform {
-  required_version = ">= 0.12"
-}
-
-resource "azurerm_resource_group" "rsg" {
-  name     = var.name
+resource "azurerm_resource_group" "RG" {
+  name     = var.resource_group_name
   location = var.location
 }
-
